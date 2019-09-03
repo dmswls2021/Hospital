@@ -23,10 +23,12 @@
 <body>
 <table class="temp">
 	<tr>
-		<td width="20%">
-			<jsp:include page="side.jsp"/>
+		<td>
+			<jsp:include page="nav.jsp"/>
 		</td>
-		<td width="85%">
+	</tr>
+	<tr>
+		<td>
 			<jsp:include page="<%= contentPage %>" flush="false"/>
 		</td>
 	</tr>
