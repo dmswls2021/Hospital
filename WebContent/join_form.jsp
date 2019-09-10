@@ -5,68 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style type="text/css">
-#wrap{
-    width:530px;
-    margin-left:auto; 
-    margin-right:auto;
-    text-align:center;
-}
-        
-#wrap>table{
-    border:3px solid #ff5555;
-}
-        
-#wrap>td{
-    border:1px solid #ff5555;
-}
-
-#wrqp>tr{
-	padding-left: 150px;
-}
-        
-#title{
-    background-color:#ff5555;
-    width: 150px;
-    height: 30px;
-    color: white;
-}
-
-.text .ltext .lltext{
-	text-align: left;
-	width: 500px;
-}
-
-.text>input{
-	width: 300px;
-}
-
-.ltext>input{
-	width: 140px;
-}
-
-.lltext>input{
-	width: 80px;
-}
-
-.btn{
-	background: #ff5555;
-	border: none;
-	width: 100px;
-	height: 50px;
-	color: white;
-	margin-top: 70px;
-}
-
-.btn:hover{
-	background: #dd3333;
-	border: none;
-	width: 100px;
-	height: 50px;
-	color: white;
-	margin-top: 70px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="table.css">
 <script type="text/javascript">
     // 필수 입력정보인 아이디, 비밀번호가 입력되었는지 확인하는 함수
 	function checkValue()
@@ -86,6 +25,12 @@
             return false;
         }
         
+        var pnum = parseInt(document.userInfo.pnum2.value);
+    	
+        if(pnum >= 5000000){
+            alert("주민등록번호를 확인하세요.");
+            return false;
+        }
         if(!document.userInfo.tel1.value){
             alert("전화번호를 입력하세요.");
             return false;

@@ -1,0 +1,60 @@
+#wrap{
+    width:530px;
+    margin-left:auto; 
+    margin-right:auto;
+    text-align:center;
+}
+        
+#wrap>table{
+    border:3px solid #ff5555;
+}
+        
+#wrap>td{
+    border:1px solid #ff5555;
+}
+
+#wrqp>tr{
+	padding-left: 150px;
+}
+        
+#title{
+    background-color:#ff5555;
+    width: 150px;
+    height: 30px;
+    color: white;
+}
+
+.text .ltext .lltext{
+	text-align: left;
+	width: 500px;
+}
+
+.text>input{
+	width: 300px;
+}
+
+.ltext>input{
+	width: 140px;
+}
+
+.lltext>input{
+	width: 80px;
+}
+
+.btn{
+	background: #ff5555;
+	border: none;
+	width: 100px;
+	height: 50px;
+	color: white;
+	margin-top: 70px;
+}
+
+.btn:hover{
+	background: #dd3333;
+	border: none;
+	width: 100px;
+	height: 50px;
+	color: white;
+	margin-top: 70px;
+}
